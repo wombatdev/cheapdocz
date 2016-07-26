@@ -1,6 +1,7 @@
 
 <div class="doctors">
-  <div data-ng-repeat="doctor in indexVM.doctors">
+  <input type="text" placeholder="Filter by Country" data-ng-model="vm.filter_on"/>
+  <div data-ng-repeat="doctor in indexVM.doctors | filter: vm.filter_on">
     <div class = "doctor">
       <a data-ui-sref="show({name: doctor.name})">
         <h2> {{doctor.name}}</h2>
