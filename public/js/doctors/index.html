@@ -1,10 +1,12 @@
-hi
-
 
 <div class="doctors">
   <div data-ng-repeat="doctor in indexVM.doctors">
-    <h3>
-  {{doctor.name}}
-    </h3>
+    <div class = "doctor">
+      <a data-ui-sref="show({name: doctor.name})">
+        <h2> {{doctor.name}}</h2>
+        <h3> {{doctor.country}}</h3>
+        <img src = "{{doctor.photoUrl}}"/>
+      </a>
+    </div>
   </div>
 </div>

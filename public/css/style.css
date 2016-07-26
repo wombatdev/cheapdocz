@@ -1,0 +1,48 @@
+*{
+  color: inherit;
+  text-decoration:inherit;
+}
+
+body{
+  font-family: "helvetica-neue";
+  font-size:25px;
+  padding: 80px;
+}
+
+h1, h2, h3 {
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+}
+
+h2, h3 {
+  line-height:20px;
+}
+
+h1{
+  font-size:100px;
+  line-height:90px;
+  color: orange;
+}
+.doctors{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.doctor {
+  float: left;
+  vertical-align: middle;
+  max-width: 550px;
+  margin: 20px auto;
+
+}
+.doctor img {
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
+
+.showimage img{
+  height: 400px;
+  float: right;
+}
