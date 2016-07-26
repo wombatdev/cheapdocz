@@ -1,0 +1,34 @@
+<div data-ng-if="!showVM.doctor">
+  <h2>That doctor couldn't be found!</h2>
+</div>
+<div data-ng-if="showVM.doctor">
+
+  <h2>{{showVM.doctor.name}}</h2>
+  <img class="showimage" src ="{{showVM.doctor.photoUrl}}">
+  <h3>Specialty: {{showVM.doctor.specialty}}</h3>
+  <h3>Country: {{showVM.doctor.country}}</h3>
+  <h3>Cost: {{showVM.doctor.cost}}</h3>
+  <h3>Experience: {{showVM.doctor.experience}}</h3>
+  <h3>Email: {{showVM.doctor.email}}</h3>
+  <h3>Website: {{showVM.doctor.website}}</h3>
+  <h3>Description: {{showVM.doctor.description}}</h3>
+
+  <div data-ng-hide="edit">
+    <button data-ng-click="edit=!edit">Edit</button>
+  </div>
+  <div data-ng-show="edit">
+    <input type="String" placeholder="name" data-ng-model="showVM.doctor.name" />
+    <input type="String" placeholder="specialty" data-ng-model="showVM.doctor.specialty" />
+    <input type="String" placeholder="country" data-ng-model="showVM.doctor.country" />
+    <input type="Number" placeholder="cost" data-ng-model="showVM.doctor.cost" />
+    <input type="Number" placeholder="experience" data-ng-model="showVM.doctor.experience" />
+    <input type="String" placeholder="email" data-ng-model="showVM.doctor.email" />
+    <input type="String" placeholder="website" data-ng-model="showVM.doctor.website" />
+    <input type="String" placeholder="description" data-ng-model="showVM.doctor.description" />
+
+    <button data-ng-click="edit=!edit">Cancel Edit</button>
+    <button data-ng-click="showVM.update()">Update</button>
+    <button data-ng-click="showVM.destroy()">Delete</button>
+  </div>
+
+</div>
