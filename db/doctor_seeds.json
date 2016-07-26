@@ -8,7 +8,8 @@
     "experience": 30,
     "email": "dre@dre.biz",
     "website": "www.beatsbydre.com",
-    "description": "Founder and current CEO of Aftermath Medicine and Beats Therapy."
+    "description": "Founder and current CEO of Aftermath Medicine and Beats Therapy.",
+    "procedures": []
   },
 
   {
@@ -20,7 +21,8 @@
     "experience": 50,
     "email": "cat@thehat.com",
     "website": "www.seussville.com",
-    "description": "One fish, two fish, red fish, blue fish."
+    "description": "One fish, two fish, red fish, blue fish.",
+    "procedures": []
   },
 
   {
@@ -32,7 +34,8 @@
     "experience": 60,
     "email": "twentythree@flavors.com",
     "website": "www.drpepper.com",
-    "description": "Always one of a kind."
+    "description": "Always one of a kind.",
+    "procedures": []
   },
 
   {
@@ -44,6 +47,7 @@
     "experience": 7,
     "email": "leo@spaceman.nk",
     "website": "http://thechive.com/2015/02/12/the-very-best-things-uttered-by-dr-leo-spaceman-33-photos/",
-    "description": "Hi, I'm Dr. Leo Spaceman. I'm a working physician with a degree from the Ho Chi Minh city School of medicine."
+    "description": "Hi, I'm Dr. Leo Spaceman. I'm a working physician with a degree from the Ho Chi Minh city School of medicine.",
+    "procedures": []
   }
 ]

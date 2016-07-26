@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Rebirthing Therapy",
+    "cost": 100
+  }, {
+    "name": "Apitherapy",
+    "cost": 30
+  }, {
+    "name": "Hip Replacement",
+    "cost": 8000
+  }, {
+    "name": "In Vitro Fertilization",
+    "cost": 1000
+  }, {
+    "name": "Angioplasty",
+    "cost": 10000
+  }, {
+    "name": "Dental Crowns, Caps and Veneers",
+    "cost": 150
+  }, {
+    "name": "Gastric Bypass",
+    "cost": 1500
+  }, {
+    "name": "Rhinoplasty",
+    "cost": 3000
+  }, {
+    "name": "Teeth Whitening",
+    "cost": 400
+  }, {
+    "name": "Shoulder Surgery",
+    "cost": 3000
+  }
+]
