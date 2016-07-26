@@ -33,6 +33,7 @@ h1{
   vertical-align: middle;
   max-width: 550px;
   margin: 20px auto;
+  padding: 20px;
 
 }
 .doctor img {
@@ -41,8 +42,8 @@ h1{
   margin: auto;
 }
 
-
-.showimage img{
-  height: 400px;
+.showimage {
+  height: 350px;
+  display:block;
   float: right;
 }
