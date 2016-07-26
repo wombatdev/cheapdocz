@@ -16,8 +16,11 @@
   <p>Email: {{showVM.doctor.email}}</p>
   <p>Website: {{showVM.doctor.website}}</p>
   <p>Description: {{showVM.doctor.description}}</p>
+  <div data-ng-repeat="doctor in indexVM.doctors">
 
+  <p>Procedures: {{showVM.doctor.procedures.name}}</p>
 
+</div>
 
   <div data-ng-hide="edit">
     <button data-ng-click="edit=!edit">Edit</button>
