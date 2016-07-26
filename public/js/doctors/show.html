@@ -3,7 +3,11 @@
 </div>
 <div data-ng-if="showVM.doctor">
 
-  <h2>{{showVM.doctor.name}}</h2>
+  <h2> <a data-ui-sref="index">Back 2 All Docz</a></h2>
+
+  <h2 class = "show">{{showVM.doctor.name}}</h2>
+
+
   <img class="showimage" src ="{{showVM.doctor.photoUrl}}">
   <p>Specialty: {{showVM.doctor.specialty}}</p>
   <p>Country: {{showVM.doctor.country}}</p>
@@ -13,9 +17,13 @@
   <p>Website: {{showVM.doctor.website}}</p>
   <p>Description: {{showVM.doctor.description}}</p>
 
+
+
   <div data-ng-hide="edit">
     <button data-ng-click="edit=!edit">Edit</button>
   </div>
+
+  <form>
   <div data-ng-show="edit">
     <input type="String" placeholder="name" data-ng-model="showVM.doctor.name" />
     <input type="String" placeholder="specialty" data-ng-model="showVM.doctor.specialty" />
@@ -25,10 +33,10 @@
     <input type="String" placeholder="email" data-ng-model="showVM.doctor.email" />
     <input type="String" placeholder="website" data-ng-model="showVM.doctor.website" />
     <input type="String" placeholder="description" data-ng-model="showVM.doctor.description" />
-
     <button data-ng-click="edit=!edit">Cancel Edit</button>
     <button data-ng-click="showVM.update()">Update</button>
     <button data-ng-click="showVM.destroy()">Delete</button>
   </div>
+</form>
 
 </div>
