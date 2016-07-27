@@ -1,0 +1,45 @@
+<div data-ng-if="!showVM.doctor">
+  <h2>That doctor couldn't be found!</h2>
+</div>
+<div data-ng-if="showVM.doctor">
+
+  <h2> <a data-ui-sref="index">Back 2 All Docz</a></h2>
+
+  <h2 class = "show">{{showVM.doctor.name}}</h2>
+
+
+  <img class="showimage" src ="{{showVM.doctor.photoUrl}}">
+  <p>Specialty: {{showVM.doctor.specialty}}</p>
+  <p>Country: {{showVM.doctor.country}}</p>
+  <p>Cost: {{showVM.doctor.cost}}</p>
+  <p>Experience: {{showVM.doctor.experience}}</p>
+  <p>Email: {{showVM.doctor.email}}</p>
+  <p>Website: {{showVM.doctor.website}}</p>
+  <p>Description: {{showVM.doctor.description}}</p>
+  <div data-ng-repeat="doctor in indexVM.doctors">
+
+  <p>Procedures: {{showVM.doctor.procedures.name}}</p>
+
+</div>
+
+  <div data-ng-hide="edit">
+    <button data-ng-click="edit=!edit">Edit</button>
+  </div>
+
+  <form>
+  <div data-ng-show="edit">
+    <input type="String" placeholder="name" data-ng-model="showVM.doctor.name" />
+    <input type="String" placeholder="specialty" data-ng-model="showVM.doctor.specialty" />
+    <input type="String" placeholder="country" data-ng-model="showVM.doctor.country" />
+    <input type="Number" placeholder="cost" data-ng-model="showVM.doctor.cost" />
+    <input type="Number" placeholder="experience" data-ng-model="showVM.doctor.experience" />
+    <input type="String" placeholder="email" data-ng-model="showVM.doctor.email" />
+    <input type="String" placeholder="website" data-ng-model="showVM.doctor.website" />
+    <input type="String" placeholder="description" data-ng-model="showVM.doctor.description" />
+    <button data-ng-click="edit=!edit">Cancel Edit</button>
+    <button data-ng-click="showVM.update()">Update</button>
+    <button data-ng-click="showVM.destroy()">Delete</button>
+  </div>
+</form>
+
+</div>
