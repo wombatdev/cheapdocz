@@ -5,17 +5,9 @@ var procSeedData = require ("./procedure_seeds.json");
 var Procedure = mongoose.model("Procedure");
 var Doctor = mongoose.model("Doctor");
 
-Doctor.remove({}).then(function(){
-  Doctor.collection.insert(seedData).then(function(){
-    process.exit();
-  })
-});
+Doctor.remove({});
 
-Procedure.remove({}).then(function(){
-  Procedure.collection.insert(seedData).then(function(){
-    process.exit();
-  })
-});
+Procedure.remove({});
 
 // spaceman = Doctor.findOne({name: "Dr. Leo Spaceman"}).then(function(doctor) {
 //     console.log(doctor);
