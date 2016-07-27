@@ -14,7 +14,8 @@ var DoctorSchema = new mongoose.Schema(
     experience: Number,
     email: String,
     website: String,
-    description: String
+    description: String,
+    procedures: [ProcedureSchema]
   }
 );
 
