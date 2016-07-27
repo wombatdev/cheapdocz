@@ -1,5 +1,10 @@
 var mongoose = require("mongoose");
 
+var ProcedureSchema = new mongoose.Schema({
+    name: String,
+    price: Number
+});
+
 var DoctorSchema = new mongoose.Schema(
   {
     name: String,
@@ -9,10 +14,12 @@ var DoctorSchema = new mongoose.Schema(
     experience: Number,
     email: String,
     website: String,
-    description: String
+    description: String,
+    procedures: [ProcedureSchema]
   }
 );
 
+mongoose.model("Procedure", ProcedureSchema);
 mongoose.model("Doctor", DoctorSchema);
 mongoose.connect("mongodb://localhost/cheapdocz");
 module.exports = mongoose;
